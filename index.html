@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trivia!</title>
+	<!-- Reset CSS -->
+	<link rel="stylesheet" href="assets/CSS/reset.css" />
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!--Link to local stylesheet -->
+	<link rel="stylesheet" href="assets/CSS/style.css" />
+
+	<!--Link to Jquery -->
+	<script
+	src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron">
+			<div class="container text-center">
+				<h1>This is a Trivia Game!!!</h1>
+			</div>
+			<div class="container">
+				<p>Try your hand at some completely unrelated and probably true trivia!  Hurry up!  The timer is counting down!</p> 
+			</div>
+			<div class="container text-center">
+				<p>Time Remaining: <span id="time-counter"></span> Seconds</p>
+			</div>
+		</div>
+		<div id="quiz-content" class="container text-center">
+			<!--Quiz Questions -->
+				<div class="container">
+					<h3>Brazil was once a colony of which European country?</h3>
+					<div class="radio">
+						<label>
+						  <input type="radio" name="q1" id="a1" value="A">
+						    Portugal
+						</label>
+						<label>
+						  <input type="radio" name="q1" id="optionsRadios1" value="B">
+						    Spain
+						</label>
+						<label>
+						  <input type="radio" name="q1" id="optionsRadios1" value="C">
+						    France
+						</label>
+						<label>
+						  <input type="radio" name="q1" id="optionsRadios1" value="D">
+						    England
+						</label>
+					</div>
+				</div>
+
+				<div class="container">
+					<h3>The European Organization for Nuclear Research is known by what four letter acronym?</h3>
+					<div class="radio">
+						<label>
+						  <input type="radio" name="q2" id="optionsRadios1" value="option1">
+						    HSU
+						</label>
+						<label>
+						  <input type="radio" name="q2" id="optionsRadios1" value="option1">
+						    FUSS
+						</label>
+						<label>
+						  <input type="radio" name="q2" id="a2" value="option1">
+						    CERN
+						</label>
+						<label>
+						  <input type="radio" name="q2" id="optionsRadios1" value="option1">
+						    FSRS
+						</label>
+					</div>
+				</div>
+
+				<div class="container">
+					<h3>What city is the capital of Canada?</h3>
+					<div class="radio">
+						<label>
+						  <input type="radio" name="q3" id="optionsRadios1" value="option1">
+						    Toronto
+						</label>
+						<label>
+						  <input type="radio" name="q3" id="a3" value="option1">
+						    Ottawa
+						</label>
+						<label>
+						  <input type="radio" name="q3" id="optionsRadios1" value="option1">
+						    Montreal
+						</label>
+						<label>
+						  <input type="radio" name="q3" id="optionsRadios1" value="option1">
+						    Calgary
+						</label>
+					</div>
+				</div>
+
+				<div class="container">
+					<h3>In what year was the first Apple computer released?</h3>
+					<div class="radio">
+						<label>
+						  <input type="radio" name="q4" id="optionsRadios1" value="option1">
+						    1989
+						</label>
+						<label>
+						  <input type="radio" name="q4" id="optionsRadios1" value="option1">
+						    1967
+						</label>
+						<label>
+						  <input type="radio" name="q4" id="optionsRadios1" value="option1">
+						    1984
+						</label>
+						<label>
+						  <input type="radio" name="q4" id="a4" value="option1">
+						    1976
+						</label>
+					</div>
+				</div>
+
+				<div class="container">
+					<h3>How many hearts does an octopus have?</h3>
+					<div class="radio">
+						<label>
+						  <input type="radio" name="q5" id="optionsRadios1" value="option1">
+						    One
+						</label>
+						<label>
+						  <input type="radio" name="q5" id="optionsRadios1" value="option1">
+						    Two
+						</label>
+						<label>
+						  <input type="radio" name="q5" id="a5" value="option1">
+						    Three
+						</label>
+						<label>
+						  <input type="radio" name="q5" id="optionsRadios1" value="option1">
+						    Four
+						</label>
+					</div>
+				</div>
+
+				<div class="container">
+					<h3>What do you call a group of unicorns?</h3>
+					<div class="radio">
+						<label>
+						  <input type="radio" name="q6" id="a6" value="option1">
+						    A Blessing
+						</label>
+						<label>
+						  <input type="radio" name="q6" id="optionsRadios1" value="option1">
+						    An Occurrence
+						</label>
+						<label>
+						  <input type="radio" name="q6" id="optionsRadios1" value="option1">
+						    A Spectacle
+						</label>
+						<label>
+						  <input type="radio" name="q6" id="optionsRadios1" value="option1">
+						    A Miracle
+						</label>
+					</div>
+				</div>
+
+				<div class="container">
+					<h3>What is the most popular breed of dog in the United States?</h3>
+					<div class="radio">
+						<label>
+						  <input type="radio" name="q7" id="a7" value="option1">
+						    Labrador Retriever
+						</label>
+						<label>
+						  <input type="radio" name="q7" id="optionsRadios1" value="option1">
+						    German Shepherd
+						</label>
+						<label>
+						  <input type="radio" name="q7" id="optionsRadios1" value="option1">
+						    Bulldog
+						</label>
+						<label>
+						  <input type="radio" name="q7" id="optionsRadios1" value="option1">
+						    Beagle
+						</label>
+					</div>
+				</div>
+
+				<div class="container">
+					<h3>What is Michael J. Fox's middle name?</h3>
+					<div class="radio">
+						<label>
+						  <input type="radio" name="q8" id="optionsRadios1" value="option1">
+						    James
+						</label>
+						<label>
+						  <input type="radio" name="q8" id="optionsRadios1" value="option1">
+						    John
+						</label>
+						<label>
+						  <input type="radio" name="q8" id="optionsRadios1" value="option1">
+						    Jeremy
+						</label>
+						<label>
+						  <input type="radio" name="q8" id="a8" value="option1">
+						    Andrew
+						</label>
+					</div>
+				</div>
+
+				<div class="container">
+					<h3>Shinto is the indigenous faith of what country?</h3>
+					<div class="radio">
+						<label>
+						  <input type="radio" name="q9" id="optionsRadios1" value="option1">
+						    Thailand
+						</label>
+						<label>
+						  <input type="radio" name="q9" id="a9" value="option1">
+						    Japan
+						</label>
+						<label>
+						  <input type="radio" name="q9" id="optionsRadios1" value="option1">
+						    South Korea
+						</label>
+						<label>
+						  <input type="radio" name="q9" id="optionsRadios1" value="option1">
+						    China
+						</label>
+					</div>
+				</div>
+
+				<div class="container">
+					<h3>Which is the most abundant metal in the earth's crust?</h3>
+					<div class="radio">
+						<label>
+						  <input type="radio" name="q10" id="optionsRadios1" value="option1">
+						    Iron
+						</label>
+						<label>
+						  <input type="radio" name="q10" id="optionsRadios1" value="option1">
+						    Nickel
+						</label>
+						<label>
+						  <input type="radio" name="q10" id="a10" value="option1">
+						    Aluminum
+						</label>
+						<label>
+						  <input type="radio" name="q10" id="optionsRadios1" value="option1">
+						    Copper
+						</label>
+					</div>
+				</div>
+		</div>	
+	</div>
+<script type="text/javascript" src="assets/logic.js">
+
+</script>
+</body>
+</html>
